@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&family=Ubuntu:wght@400;500;700&display=swap');
+/*     font-family: 'Poppins', sans-serif;
+
+    font-family: 'Ubuntu', sans-serif;
+ */
+ *{
+     margin: 0;padding: 0;
+     text-decoration: none;
+     box-sizing: border-box;  
+ }
+ .navbar{ 
+     width: 100%;
+     position: fixed;
+     padding: 10px 0 10px 0;
+     background: black;
+     z-index: 1;
+     border-bottom: grey 1px solid;
+     
+ }
+ .max{
+     max-width: 1300px;
+     padding: 0 80px;
+     margin: auto;
+ }
+ .about .contact_me .projects .about{
+     font-family: 'Poppins',sans-serif;
+ }
+ .logo a{
+     color: antiquewhite;  
+     font-family:'Poppins', sans-serif;
+     font-size: 35px;
+     font-weight: 700;
+     
+ } 
+ .logo a:hover{
+     color: orange;
+     
+ } 
+ .logo a span:hover{
+     color: bisque;
+ }
+ .navmax{
+     flex-wrap:wrap;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 80px 0 150px;
+ }
+  .menu li{
+      list-style: none;
+      display: inline-block; 
+  } 
+  .menu li a{
+    font-size: 20px;
+   margin-left: 25px;
+   font-weight: 500;
+   color: bisque;
+   text-shadow: black;
+   font-family: 'Ubuntu',sans-serif;
+ } 
+  .navbar .menu li :hover{
+   color: orange;
+   font-size: 24px ; 
+ }  
+ 
+ 
+  /* home section style */
+  .home{
+      display: flex;
+      background: url(image.png) repeat-x center;
+      height: 100vh;
+      background-size: cover;
+      color: white;
+     min-height: 500px;
+     font-family: 'Ubuntu',sans-serif;
+
+  }
+  .home .max{
+      margin: auto 0 auto 40px;
+  }
+  .home .home-content .text1{
+      font-size: 28px;
+  }
+  .home .home-content .text2{
+      font-size: 85px;
+      font-weight: 600;
+      margin-left: -3px;
+      word-spacing: 2px;
+  }
+  .special{
+      color: orange;
+  }
+  .home .home-content .text3{
+    font-size: 27px;
+    margin: 5px 0;
+}.home .home-content .text3 span{
+    color: orange;
+    font-weight: 600;
+} 
+ 
+.home .max ul{
+    display: flex;
+    justify-content: space-between; 
+    align-content: center;
+   width: 100px;
+}
+
+.home .max ul li .profile{
+    margin-top: 10px;
+    width: 40px; 
+} 
+.leetcodes{
+    background: white;
+    border: grey 3px solid;
+    border-radius: 30px;
+}
+ /* about section styling */
+section{
+    padding: 100px 0 0 0; 
+}
+ .about,.projects, .skills{
+     font-family: 'Poppins',sans-serif; 
+     background: black;
+     padding-bottom: 90px;
+     padding-top: 100px;
+ }
+.title{
+     text-align: center;
+     font-family: 'Ubuntu',sans-serif; 
+     font-size: 42px;
+     font-weight: 700;
+     color: orange;
+     margin-bottom: 60px;
+     padding-bottom: 10px;
+     border-bottom: 2px solid bisque ;
+     border-top: 2px solid bisque;
+     
+
+ }
+ 
+.about .about-content, .contact_me .contact-content, .skills .skills-content{
+    text-align: center; 
+    margin-bottom: 0px;
+    display: flex;   
+  
+
+}.image{
+    height: 500px;
+    justify-content: center;
+}
+.text{
+    text-align: left;
+    justify-content: center;
+    color: orange;
+    font-family: 'Poppins',sans-serif;
+    font-size: 21px;
+   
+    padding-bottom:20px ;
+}
+/* project section */
+.projects {
+    background:url(image.png);
+    background-size: cover; 
+}
+.projects .max .serv-content{
+ display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;  
+  align-content: space-between;
+}
+.card .box{
+    margin: 20px;
+    border: grey 2px solid;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    padding: 13px;
+    width: 300px;
+}
+.card .box:hover{
+  background: black; 
+  width:320px; 
+  border-top: black 2px solid; 
+}
+.card .box .text{
+    text-align: center; 
+} 
+.more{
+    text-align: center;
+    text-decoration: palegoldenrod;
+    color: crimson;
+    font-size: large;
+} 
+.material-icons {
+    color: wheat;  
+    font-size: 110px !important; 
+    
+}
+.about .text-p{
+    color: orange;
+    font-family: 'Poppins',sans-serif; 
+   text-align: justify;
+    font-size: 20px;
+    font-weight: 300;
+}
+#icon1,#icon2,#icon3,#icon4,#iconmenu{
+    font-size: 30px !important; 
+    color: crimson;
+}
+.row{
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    text-align: center;
+} 
+/* skills Section styling*/
+.skills, .contact_me{
+    background: white; 
+}
+.skills .title, .contact_me .title{
+    color: black;
+    border: none;
+}
+.text{
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(65, 62, 62);
+    font-size: 30px;
+    font-weight: 600;
+}
+.text-pera{
+    color: black;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 100;
+}
+.column_left{
+    color: black;
+    text-align: left; 
+}
+.column_right{
+    display: flexbox;  
+
+    align-content: center;
+}
+.column_right .bars{
+   margin-bottom: 15px;
+
+}
+.column_right .info{
+   display: flex;
+   align-items: center;
+
+   justify-content: space-between;  
+}
+.column_right span{
+    font-weight: 500;
+    font-size: 20px;
+}
+.column_right .line{
+     
+    height: 5px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+}
+.column_right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.column_right .java::before{
+    width: 80%;
+}.column_right .dsa::before{
+    width: 80%;
+}.column_right .android::before{
+    width: 70%;
+}.column_right .kotlin::before{
+    width: 50%;
+}.column_right .html::before{
+    width: 80%;
+}
+.column_right .css::before{
+    width: 70%;
+}
+.contact-content .column{
+    width: calc(50%-30px);
+} 
+.contact_me .contact-content .left p{
+text-align: justify;
+}
+.contact_me .contact-content .left .icons{
+    margin: 20px 0;
+}
+.contact_me .contact-content .row{
+    margin: 10px 0;
+    display: flex;
+    height: 65px;
+    align-items: left; 
+    justify-content: start;
+}
+.contact_me .contact-content .row .info{
+    margin-left: 30px;
+    font-family: 'Poppins',sans-serif;
+   justify-content: left;
+   align-items: left;
+
+}
+.contact-content .info .head{
+    font-weight: 500;
+    font-size: 25px;
+    color: black;
+    justify-content: left;
+}
+.email{
+    text-align: left;
+}
+.footer{
+    margin-top:20px ;
+    background: black; 
+    display: flex;
+    color: white;
+    text-align: center;
+    height: 50px; 
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu',sans-serif;
+}
+
