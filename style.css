@@ -22,6 +22,11 @@
      padding: 0 80px;
      margin: auto;
  }
+ .material-icons {
+    color: wheat;  
+    font-size: 110px !important; 
+    
+}
  .about .contact_me .projects .about{
      font-family: 'Poppins',sans-serif;
  }
@@ -39,12 +44,10 @@
  .logo a span:hover{
      color: bisque;
  }
- .navmax{
-     flex-wrap:wrap;
+ .navbar .max{ 
      display: flex;
      justify-content: space-between;
-     align-items: center;
-     padding: 0 80px 0 150px;
+     align-items: center; 
  }
   .menu li{
       list-style: none;
@@ -62,8 +65,9 @@
    color: orange;
    font-size: 24px ; 
  }  
- 
- 
+ .menu-btn{  
+    display: none; 
+}
   /* home section style */
   .home{
       display: flex;
@@ -97,7 +101,7 @@
     color: orange;
     font-weight: 600;
 } 
- 
+
 .home .max ul{
     display: flex;
     justify-content: space-between; 
@@ -191,11 +195,7 @@ section{
     color: crimson;
     font-size: large;
 } 
-.material-icons {
-    color: wheat;  
-    font-size: 110px !important; 
-    
-}
+
 .about .text-p{
     color: orange;
     font-family: 'Poppins',sans-serif; 
@@ -331,4 +331,109 @@ text-align: justify;
     align-items: center;
     font-family: 'Ubuntu',sans-serif;
 }
+/* responsive media query start */
+@media(max-width:947px){
+   
+    .max{ 
+        padding: 0 30px; 
+    }
+    .home .max{
+        padding-left: 0px;
+    }
+    .menu-btn{  
+        display: block;
+        z-index: 999;  
+    }
+   .logo a{
+    color: antiquewhite;  
+    font-family:'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+   }
+  
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: black;
+       text-align: center;
+       padding-top: 80px;
+       transition: all 0.3s ease;
+    }
+    .navbar .menu.active{ 
+    left: 0%;
 
+    }
+    .navbar .menu li{
+        display: block;
+
+    }
+    .navbar .menu li a{
+display: inline-block;
+margin: 20px 0;
+font-size: 25px;
+
+    }
+    .home .home-content .text1{
+        font-size: 20px;
+    }
+    .home .home-content .text2{
+        font-size: 65px;
+        font-weight: 600;
+        margin-left: -3px;
+        word-spacing: 2px;
+    }
+    .special{
+        color: orange;
+    }
+    .home .home-content .text3{
+      font-size: 21px;
+      margin: 5px 0;
+  }.title{
+      font-size: 38px;
+
+  }
+}
+@media(max-width:690px){
+    .max{ 
+        padding: 0 20px; 
+    }
+    .home .max{
+        padding-left: 0px;
+    }
+    .logo a{
+        color: antiquewhite;  
+        font-family:'Poppins', sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+       }
+       .logo a:hover{
+           color: orange;
+       }
+    .home .home-content .text1{
+        font-size: 18px;
+    }
+    .home .home-content .text2{
+        font-size: 55px;
+        font-weight: 600; 
+        word-spacing: 2px;
+    }
+    .title{
+        font-size: 33px;
+        
+    }
+    .special{
+        color: orange;
+    }
+    .home .home-content .text3{
+      font-size: 18px; 
+  }
+  .home .max ul li .profile{
+    margin-top: 10px;
+    width: 25px; 
+    
+} 
+   
+}
