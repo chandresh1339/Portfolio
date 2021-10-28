@@ -71,7 +71,7 @@
   /* home section style */
   .home{
       display: flex;
-      background: url(image.png) repeat-x center;
+      background: url(images/image.png) repeat-x center;
       height: 100vh;
       background-size: cover;
       color: white;
@@ -163,7 +163,7 @@ section{
 }
 /* project section */
 .projects {
-    background:url(image.png);
+    background:url(images/image.png);
     background-size: cover; 
 }
 .projects .max .serv-content{
